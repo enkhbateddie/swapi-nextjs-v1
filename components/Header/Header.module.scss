@@ -1,0 +1,28 @@
+$yellowS: rgb(255, 213, 0);
+// image center
+.header {
+    color: $yellowS;
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+  img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+  }
+  a {
+    color: $yellowS;
+    font-weight: 500;
+    // hover red with glow
+    &:hover {
+      color: red;
+      text-shadow: 0 0 10px red;
+    }
+  }
+}

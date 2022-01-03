@@ -1,0 +1,17 @@
+.film {
+    padding: 0 1.5rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .filmImg{
+        height: 100vh;
+    }
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}

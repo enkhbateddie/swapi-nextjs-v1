@@ -1,0 +1,18 @@
+.grid {
+    // display grid 3 columns
+    height: 100%;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1.5rem;
+    max-width: 100%;
+    margin: 0 auto;
+    // responsive grid
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (max-width: 480px) {
+      grid-template-columns: 1fr;
+    }
+  }
+  

@@ -1,0 +1,74 @@
+$yellowS: rgb(255, 213, 0);
+$greenS: #00a651;
+$redS: #e53935;
+$blueS: #1d4388;
+
+.card {
+    padding: 1rem;
+    text-align: left;
+    color: silver;
+    text-decoration: none;
+    border: 4px solid silver;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+    // on hover and focus of the card neomorphic effect
+    &:hover,
+    &:focus,
+    &:active {
+        color: #FFE81F;
+        border-color: #FFE81F;
+        box-shadow: 
+            0 0 5px #f7ec12,
+            0 0 8px $blueS,
+            0 0 19px #f7ec12,
+        ;
+        text-shadow:
+            /* White glow */
+            0 0 5px #f7ec12,
+            0 0 8px $blueS,
+            0 0 19px #f7ec12,
+
+    }
+    // favourite button z-index front
+    height: 100%;
+    a {
+        cursor: pointer;
+        padding: 0;
+        margin: 0;
+    }
+    .title {
+        font-size: 1rem;
+        font-weight: 700;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 0.7rem;
+        // change size in small screen
+        @media (max-width: 800px) {
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 1000px) {
+            font-size: 0.9rem;
+        }
+
+    }
+    .likeButton {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        width: 5rem;
+        height: 2rem;
+        gap: 0.3rem;
+        // on hover and focus of the card neomorphic effect
+        img {
+            cursor: pointer;
+        }
+        .whiteStar{
+            -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+            filter: grayscale(100%);
+        }      
+    }
+}
